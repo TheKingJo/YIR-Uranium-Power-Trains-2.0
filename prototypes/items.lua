@@ -2,7 +2,7 @@ data:extend({
 	{
 		type = "item",
 		name = "yir_atom_header",
-		icon = "__z_yira_UP__/graphics/atom_trieb_icon.png",
+		icon = "__z_yira_UP__/graphics/icons/atom_trieb_icon.png",
 		group = "railway_addons",
 		subgroup = "yir_uranium_power_loco",
 		order = "d3",
@@ -13,7 +13,7 @@ data:extend({
 	{
 		type = "item",
 		name = "yir_atom_mitte",
-		icon = "__z_yira_UP__/graphics/atom_mitte_icon.png",
+		icon = "__z_yira_UP__/graphics/icons/atom_mitte_icon.png",
 		group = "railway_addons",
 		subgroup = "yir_uranium_power_loco",
 		order = "d4",
@@ -26,7 +26,7 @@ data:extend({
 	{
 		type = "item-with-entity-data",
 		name = "yir_cw_flourit",
-		icon = "__z_yira_UP__/graphics/cws64_fluorite_icon.png",
+		icon = "__z_yira_UP__/graphics/icons/cws64_fluorite_icon.png",
 		group = "railway_addons",
 		subgroup = "yir_uranium_power_cargo2a",
 		order = "cw1",
@@ -37,7 +37,7 @@ data:extend({
 	{
 		type = "item-with-entity-data",
 		name = "yir_cw_uranite",
-		icon = "__z_yira_UP__/graphics/cws64_uranite-icon.png",
+		icon = "__z_yira_UP__/graphics/icons/cws64_uranite-icon.png",
 		group = "railway_addons",
 		subgroup = "yir_uranium_power_cargo2a",
 		order = "cw2",
@@ -48,7 +48,7 @@ data:extend({
 	{
 		type = "item-with-entity-data",
 		name = "yir_cw_upempty",
-		icon = "__z_yira_UP__/graphics/cws64_empty.png",
+		icon = "__z_yira_UP__/graphics/icons/cws64_empty.png",
 		group = "railway_addons",
 		subgroup = "yir_uranium_power_cargo2a",
 		order = "cw3",
@@ -59,7 +59,7 @@ data:extend({
 	{
 		type = "item-with-entity-data",
 		name = "yir_cw_upclosed",
-		icon = "__z_yira_UP__/graphics/cws64_up_closed_icon.png",
+		icon = "__z_yira_UP__/graphics/icons/cws64_up_closed_icon.png",
 		group = "railway_addons",
 		subgroup = "yir_uranium_power_cargo2a",
 		order = "cw4",
@@ -72,7 +72,7 @@ data:extend({
 	{
 		type = "item-with-entity-data",
 		name = "yir_cw_flourit_4a",
-		icon = "__z_yira_UP__/graphics/cws64_fluorite_icon.png",
+		icon = "__z_yira_UP__/graphics/icons/cws64_fluorite_icon.png",
 		group = "railway_addons",
 		subgroup = "yir_uranium_power_cargo4a",
 		order = "cw5",
@@ -84,7 +84,7 @@ data:extend({
 	{
 		type = "item-with-entity-data",
 		name = "yir_cw_uran_4a",
-		icon = "__z_yira_UP__/graphics/cws64_uranite-icon.png",
+		icon = "__z_yira_UP__/graphics/icons/cws64_uranite-icon.png",
 		group = "railway_addons",
 		subgroup = "yir_uranium_power_cargo4a",
 		order = "cw6",
@@ -96,7 +96,7 @@ data:extend({
 	{
 		type = "item-with-entity-data",
 		name = "yir_cw_empty_4a",
-		icon = "__z_yira_UP__/graphics/cws64_empty.png",
+		icon = "__z_yira_UP__/graphics/icons/cws64_empty.png",
 		group = "railway_addons",
 		subgroup = "yir_uranium_power_cargo4a",
 		order = "cw7",
@@ -108,7 +108,7 @@ data:extend({
 	{
 		type = "item-with-entity-data",
 		name = "yir_cw_trans_4a",
-		icon = "__z_yira_UP__/graphics/cws64_up_closed_icon.png",
+		icon = "__z_yira_UP__/graphics/icons/cws64_up_closed_icon.png",
 		group = "railway_addons",
 		subgroup = "yir_uranium_power_cargo4a",
 		order = "cw8",
@@ -120,7 +120,7 @@ data:extend({
 	{
 		type = "item-with-entity-data",
 		name = "yir_cw_4a_urana",
-		icon = "__z_yira_UP__/graphics/4aw_cw_urana_icon.png",
+		icon = "__z_yira_UP__/graphics/icons/4aw_cw_urana_icon.png",
 		group = "railway_addons",
 		subgroup = "yir_uranium_power_cargo4a",
 		order = "cw9a",
@@ -132,7 +132,7 @@ data:extend({
 	{
 		type = "item-with-entity-data",
 		name = "yir_cw_4a_cellsu",
-		icon = "__z_yira_UP__/graphics/4aw_cw_ucells_icon.png",
+		icon = "__z_yira_UP__/graphics/icons/4aw_cw_ucells_icon.png",
 		group = "railway_addons",
 		subgroup = "yir_uranium_power_cargo4a",
 		order = "cw9b",

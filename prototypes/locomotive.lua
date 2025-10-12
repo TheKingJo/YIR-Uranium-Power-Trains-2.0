@@ -1,10 +1,10 @@
-require("lib.functions")
+functions = require("lib.functions")
 
 data:extend({
 	{
 		type = "locomotive",
 		name = "yir_atom_header",
-		icon = "__z_yira_UP__/graphics/atom_trieb_icon.png",
+		icon = "__z_yira_UP__/graphics/icons/atom_trieb_icon.png",
 		icon_size = 32,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		minable = {mining_time = 1, result = "yir_atom_header"},
@@ -107,7 +107,7 @@ data:extend({
 			size = {20, 40},
 			scale = 0.5
 		},
-		wheels = standard_train_wheels,
+		wheels = functions.standard_train_wheels,
 		stop_trigger = {
 			-- left side
 			{
@@ -142,7 +142,7 @@ data:extend({
 				}
 			}
 		},
-		drive_over_tie_trigger = yir_drive_over_tie(),
+		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
 		vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 		working_sound = {
@@ -158,7 +158,7 @@ data:extend({
 	{
 		type = "locomotive",
 		name = "yir_atom_mitte",
-		icon = "__z_yira_UP__/graphics/atom_mitte_icon.png",
+		icon = "__z_yira_UP__/graphics/icons/atom_mitte_icon.png",
 		icon_size = 32,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		minable = {mining_time = 1, result = "yir_atom_mitte"},
@@ -261,7 +261,7 @@ data:extend({
 			size = {20, 40},
 			scale = 0.5
 		},
-		wheels = standard_train_wheels,
+		wheels = functions.standard_train_wheels,
 		stop_trigger = {
 			-- left side
 			{
@@ -296,7 +296,7 @@ data:extend({
 				}
 			}
 		},
-		drive_over_tie_trigger = yir_drive_over_tie(),
+		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
 		vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 		working_sound = {

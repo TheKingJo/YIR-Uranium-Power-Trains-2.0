@@ -1,10 +1,11 @@
-require("lib.functions")
+functions = require("lib.functions")
+
 data:extend(
 {
 	{
 		type = "cargo-wagon",
 		name = "yir_cw_flourit_4a",
-		icon = "__z_yira_UP__/graphics/cws64_fluorite_icon.png",
+		icon = "__z_yira_UP__/graphics/icons/cws64_fluorite_icon.png",
 		icon_size = 32,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		inventory_size = 30,
@@ -22,15 +23,13 @@ data:extend(
 		friction_force = 0.0015,
 		air_resistance = 0.002,
 		energy_per_hit_point = 5,
-		resistances =
-		{
+		resistances = {
 			{type = "physical", decrease = 15, percent = 30},
 			{type = "impact",decrease = 50,percent = 60},
 			{type = "acid",decrease = 10,percent = 20}
 		},
 		vertical_selection_shift = -0.8,
-		pictures =
-		{
+		pictures = {
 			rotated = {
 			priority = "very-low",
 			width = 256,
@@ -56,11 +55,10 @@ data:extend(
 			scale = 0.5
 		},
 
-		wheels = standard_train_wheels,
-		drive_over_tie_trigger = yir_drive_over_tie(),
+		wheels = functions.standard_train_wheels,
+		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
-		working_sound =
-		{
+		working_sound = {
 			sound =
 			{
 				filename = "__base__/sound/train-wheels.ogg",
@@ -77,7 +75,7 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "yir_cw_uran_4a",
-		icon = "__z_yira_UP__/graphics/cws64_uranite-icon.png",
+		icon = "__z_yira_UP__/graphics/icons/cws64_uranite-icon.png",
 		icon_size = 32,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		inventory_size = 30,
@@ -95,15 +93,13 @@ data:extend(
 		friction_force = 0.0015,
 		air_resistance = 0.002,
 		energy_per_hit_point = 5,
-		resistances =
-		{
+		resistances = {
 			{type = "physical", decrease = 15, percent = 30},
 			{type = "impact",decrease = 50,percent = 60},
 			{type = "acid",decrease = 10,percent = 20}
 		},
 		vertical_selection_shift = -0.8,
-		pictures =
-		{
+		pictures = {
 			rotated = {
 			priority = "very-low",
 			width = 256,
@@ -129,11 +125,10 @@ data:extend(
 			scale = 0.5
 		},
 
-		wheels = standard_train_wheels,
-		drive_over_tie_trigger = yir_drive_over_tie(),
+		wheels = functions.standard_train_wheels,
+		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
-		working_sound =
-		{
+		working_sound = {
 			sound =
 			{
 				filename = "__base__/sound/train-wheels.ogg",
@@ -150,7 +145,7 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "yir_cw_empty_4a",
-		icon = "__z_yira_UP__/graphics/cws64_empty.png",
+		icon = "__z_yira_UP__/graphics/icons/cws64_empty.png",
 		icon_size = 32,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		inventory_size = 30,
@@ -168,15 +163,13 @@ data:extend(
 		friction_force = 0.0015,
 		air_resistance = 0.002,
 		energy_per_hit_point = 5,
-		resistances =
-		{
+		resistances = {
 			{type = "physical", decrease = 15, percent = 30},
 			{type = "impact",decrease = 50,percent = 60},
 			{type = "acid",decrease = 10,percent = 20}
 		},
 		vertical_selection_shift = -0.8,
-		pictures =
-		{
+		pictures = {
 			rotated = {
 			priority = "very-low",
 			width = 256,
@@ -202,11 +195,10 @@ data:extend(
 			scale = 0.5
 		},
 
-		wheels = standard_train_wheels,
-		drive_over_tie_trigger = yir_drive_over_tie(),
+		wheels = functions.standard_train_wheels,
+		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
-		working_sound =
-		{
+		working_sound = {
 			sound =
 			{
 				filename = "__base__/sound/train-wheels.ogg",
@@ -223,7 +215,7 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "yir_cw_trans_4a",
-		icon = "__z_yira_UP__/graphics/cws64_up_closed_icon.png",
+		icon = "__z_yira_UP__/graphics/icons/cws64_up_closed_icon.png",
 		icon_size = 32,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		inventory_size = 30,
@@ -241,15 +233,13 @@ data:extend(
 		friction_force = 0.0015,
 		air_resistance = 0.002,
 		energy_per_hit_point = 5,
-		resistances =
-		{
+		resistances = {
 			{type = "physical", decrease = 15, percent = 30},
 			{type = "impact",decrease = 50,percent = 60},
 			{type = "acid",decrease = 10,percent = 20}
 		},
 		vertical_selection_shift = -0.8,
-		pictures =
-		{
+		pictures = {
 			rotated = {
 			priority = "very-low",
 			width = 256,
@@ -275,11 +265,10 @@ data:extend(
 			scale = 0.5
 		},
 
-		wheels = standard_train_wheels,
-		drive_over_tie_trigger = yir_drive_over_tie(),
+		wheels = functions.standard_train_wheels,
+		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
-		working_sound =
-		{
+		working_sound = {
 			sound =
 			{
 				filename = "__base__/sound/train-wheels.ogg",
@@ -296,7 +285,7 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "yir_cw_4a_urana",
-		icon = "__z_yira_UP__/graphics/4aw_cw_urana_icon.png",
+		icon = "__z_yira_UP__/graphics/icons/4aw_cw_urana_icon.png",
 		icon_size = 32,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		inventory_size = 30,
@@ -314,15 +303,13 @@ data:extend(
 		friction_force = 0.5,
 		air_resistance = 0.05,
 		energy_per_hit_point = 5,
-		resistances =
-		{
+		resistances = {
 			{type = "physical", decrease = 15, percent = 30},
 			{type = "impact",decrease = 50,percent = 60},
 			{type = "acid",decrease = 10,percent = 20}
 		},
 		vertical_selection_shift = -0.8,
-		pictures =
-		{
+		pictures = {
 			rotated = {
 			priority = "very-low",
 			width = 512,
@@ -354,11 +341,10 @@ data:extend(
 			scale = 0.5
 		},
 
-		wheels = standard_train_wheels,
-		drive_over_tie_trigger = yir_drive_over_tie(),
+		wheels = functions.standard_train_wheels,
+		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
-		working_sound =
-		{
+		working_sound = {
 			sound =
 			{
 				filename = "__base__/sound/train-wheels.ogg",
@@ -375,7 +361,7 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "yir_cw_4a_cellsu",
-		icon = "__z_yira_UP__/graphics/4aw_cw_ucells_icon.png",
+		icon = "__z_yira_UP__/graphics/icons/4aw_cw_ucells_icon.png",
 		icon_size = 32,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		inventory_size = 30,
@@ -393,15 +379,13 @@ data:extend(
 		friction_force = 0.5,
 		air_resistance = 0.05,
 		energy_per_hit_point = 5,
-		resistances =
-		{
+		resistances = {
 			{type = "physical", decrease = 15, percent = 30},
 			{type = "impact",decrease = 50,percent = 60},
 			{type = "acid",decrease = 10,percent = 20}
 		},
 		vertical_selection_shift = -0.8,
-		pictures =
-		{
+		pictures = {
 			rotated = {
 			priority = "very-low",
 			width = 512,
@@ -433,11 +417,10 @@ data:extend(
 			scale = 0.5
 		},
 
-		wheels = standard_train_wheels,
-		drive_over_tie_trigger = yir_drive_over_tie(),
+		wheels = functions.standard_train_wheels,
+		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
-		working_sound =
-		{
+		working_sound = {
 			sound =
 			{
 				filename = "__base__/sound/train-wheels.ogg",
