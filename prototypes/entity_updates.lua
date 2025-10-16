@@ -12,6 +12,20 @@ local entityData = {
 
 local itemData = {
 	large = {
+		"yir_atom_header",
+		"yir_atom_mitte",
+
+		"yir_cw_flourit",
+		"yir_cw_uranite",
+		"yir_cw_upempty",
+		"yir_cw_upclosed",
+
+		"yir_cw_flourit_4a",
+		"yir_cw_uran_4a",
+		"yir_cw_empty_4a",
+		"yir_cw_trans_4a",
+		"yir_cw_4a_urana",
+		"yir_cw_4a_cellsu",
 	},
 }
 
@@ -101,7 +115,7 @@ local types = {
 
 for type, items in pairs(itemData) do
 	for _, name in pairs(items) do
-		local item = data.raw["item"][name]
+		local item = data.raw["item-with-entity-data"][name]
 
 		if item ~= nil then
 			item.inventory_move_sound = item_sounds[types[type].."_inventory_move"]
@@ -252,7 +266,7 @@ workingSoundSteam.main_sounds[2].sound.filename = "__base__/sound/steam-engine-9
 workingSoundSteam.main_sounds[2].sound.volume = 0.5
 
 local stats1 = {
-	future  = {resistances = resistance3, max_speed = 2.0, max_power = "2000kW",braking_force = 20, friction_force = 0.0025, air_resistance = 0.006,  energy_per_hit_point = 4, reversing_power_modifier = 1,   working_sound = workingSoundDiesel},
+	future  = {resistances = resistance3, max_speed = 2.0, max_power = "2000kW",braking_force = 20, friction_force = 0.0025, air_resistance = 0.006, energy_per_hit_point = 4, reversing_power_modifier = 1, working_sound = workingSoundDiesel},
 }
 local stats2 = {
 	future  = {fuel_inventory_size = 1, effectivity = 1},

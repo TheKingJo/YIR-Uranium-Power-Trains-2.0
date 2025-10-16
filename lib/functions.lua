@@ -5,8 +5,7 @@ local functions = {
     {volume_multiplier("main-menu", 2.4), volume_multiplier("driving", 1.3)})
   },
 
-  standard_train_wheels =
-  {
+  standard_train_wheels = {
     rotated = util.sprite_load("__base__/graphics/entity/train-wheel/train-wheel",
       {
         priority = "very-low",
@@ -16,7 +15,11 @@ local functions = {
         usage = "train"
       }
     )
-  }
+  },
+  crash_trigger = {
+    type = "play-sound",
+    sound = { filename = "__base__/sound/car-crash.ogg", volume = 0 }
+  },
 }
 
 return functions

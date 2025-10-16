@@ -14,7 +14,6 @@ data:extend({
 		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
 		selection_box = {{-1, -3}, {1, 3}},
-		drawing_box = {{-1, -4}, {1, 3}},
 		connection_distance = 3,
 		joint_distance = 4,
 		weight = 2000,
@@ -82,76 +81,23 @@ data:extend({
 		},
 		pictures = {
 			rotated = {
-			priority = "very-low",
-			width = 256,
-			height = 256,
-			direction_count = 128,
-			filenames = {
-				"__z_yira_UP__/graphics/atom_head_sheet-0.png",
-				"__z_yira_UP__/graphics/atom_head_sheet-1.png"
+				priority = "very-low",
+				width = 256,
+				height = 256,
+				direction_count = 128,
+				filenames = {
+					"__z_yira_UP__/graphics/atom_head_sheet-0.png",
+					"__z_yira_UP__/graphics/atom_head_sheet-1.png"
+				},
+				line_length = 8,
+				lines_per_file = 8,
+				shift = {0.42, -1.125}
 			},
-			line_length = 8,
-			lines_per_file = 8,
-			shift = {0.42, -1.125}
 		},
-		},
-		minimap_representation = {
-			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
+		crash_trigger = functions.crash_trigger,
 		wheels = functions.standard_train_wheels,
-		stop_trigger = {
-			-- left side
-			{
-				type = "create-trivial-smoke",
-				repeat_count = 75,
-				smoke_name = "smoke-train-stop",
-				initial_height = 0,
-				-- smoke goes to the left
-				speed = {-0.03, 0},
-				speed_multiplier = 0.75,
-				speed_multiplier_deviation = 1.1,
-				offset_deviation = {{-0.75, -2.7}, {-0.3, 2.7}}
-			},
-			-- right side
-			{
-				type = "create-trivial-smoke",
-				repeat_count = 75,
-				smoke_name = "smoke-train-stop",
-				initial_height = 0,
-				speed = {0.03, 0},
-				speed_multiplier = 0.75,
-				speed_multiplier_deviation = 1.1,
-				offset_deviation = {{0.3, -2.7}, {0.75, 2.7}}
-			},
-			{
-				type = "play-sound",
-				sound = {
-					{
-						filename = "__base__/sound/train-breaks.ogg",
-						volume = 0.6
-					}
-				}
-			}
-		},
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
-		vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
-		working_sound = {
-			sound = {
-				filename = "__base__/sound/train-engine.ogg",
-				volume = 0.5
-			},
-			match_speed_to_activity = true
-		},
 		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
 		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
 	},
@@ -168,7 +114,6 @@ data:extend({
 		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
 		selection_box = {{-1, -3}, {1, 3}},
-		drawing_box = {{-1, -4}, {1, 3}},
 		connection_distance = 3,
 		joint_distance = 4,
 		weight = 5000,
@@ -236,76 +181,23 @@ data:extend({
 		},
 		pictures = {
 			rotated = {
-			priority = "very-low",
-			width = 256,
-			height = 256,
-			direction_count = 128,
-			filenames = {
-				"__z_yira_UP__/graphics/atom_mitte_sheet-0.png",
-				"__z_yira_UP__/graphics/atom_mitte_sheet-1.png"
+				priority = "very-low",
+				width = 256,
+				height = 256,
+				direction_count = 128,
+				filenames = {
+					"__z_yira_UP__/graphics/atom_mitte_sheet-0.png",
+					"__z_yira_UP__/graphics/atom_mitte_sheet-1.png"
+				},
+				line_length = 8,
+				lines_per_file = 8,
+				shift = {0.42, -1.125}
 			},
-			line_length = 8,
-			lines_per_file = 8,
-			shift = {0.42, -1.125}
 		},
-		},
-		minimap_representation = {
-			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
+		crash_trigger = functions.crash_trigger,
 		wheels = functions.standard_train_wheels,
-		stop_trigger = {
-			-- left side
-			{
-				type = "create-trivial-smoke",
-				repeat_count = 75,
-				smoke_name = "smoke-train-stop",
-				initial_height = 0,
-				-- smoke goes to the left
-				speed = {-0.03, 0},
-				speed_multiplier = 0.75,
-				speed_multiplier_deviation = 1.1,
-				offset_deviation = {{-0.75, -2.7}, {-0.3, 2.7}}
-			},
-			-- right side
-			{
-				type = "create-trivial-smoke",
-				repeat_count = 75,
-				smoke_name = "smoke-train-stop",
-				initial_height = 0,
-				speed = {0.03, 0},
-				speed_multiplier = 0.75,
-				speed_multiplier_deviation = 1.1,
-				offset_deviation = {{0.3, -2.7}, {0.75, 2.7}}
-			},
-			{
-				type = "play-sound",
-				sound = {
-					{
-						filename = "__base__/sound/train-breaks.ogg",
-						volume = 0.6
-					}
-				}
-			}
-		},
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
-		vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
-		working_sound = {
-			sound = {
-				filename = "__base__/sound/train-engine.ogg",
-				volume = 0.5
-			},
-			match_speed_to_activity = true
-		},
 		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
 		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
 	}

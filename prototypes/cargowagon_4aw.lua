@@ -16,7 +16,7 @@ data:extend(
 		corpse = "medium-remnants",
 		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
-		selection_box = {{-1.0, -2.7}, {1, 3.3}},
+		selection_box = {{-1.0, -3}, {1, 3}},
 		connection_distance = 3, joint_distance = 4,
 		weight = 2000,
 		max_speed = 1.204,
@@ -39,18 +39,6 @@ data:extend(
 			shift = {0.42, -1.125}
 			},
 		},
-		minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
 
 		wheels = functions.standard_train_wheels,
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
@@ -63,10 +51,9 @@ data:extend(
 			},
 			match_volume_to_activity = true,
 		},
-		crash_trigger = crash_trigger(),
+		crash_trigger = functions.crash_trigger,
 		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
 		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
-		vehicle_impact_sound =  {filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0},
 	},
 
 	{
@@ -82,7 +69,7 @@ data:extend(
 		corpse = "medium-remnants",
 		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
-		selection_box = {{-1.0, -2.7}, {1, 3.3}},
+		selection_box = {{-1.0, -3}, {1, 3}},
 		connection_distance = 3, joint_distance = 4,
 		weight = 3000,
 		max_speed = 1.204,
@@ -105,18 +92,6 @@ data:extend(
 			shift = {0.42, -1.125}
 			},
 		},
-		minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
 
 		wheels = functions.standard_train_wheels,
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
@@ -129,10 +104,9 @@ data:extend(
 			},
 			match_volume_to_activity = true,
 		},
-		crash_trigger = crash_trigger(),
+		crash_trigger = functions.crash_trigger,
 		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
 		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
-		vehicle_impact_sound =  {filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0},
 	},
 
 	{
@@ -148,7 +122,7 @@ data:extend(
 		corpse = "medium-remnants",
 		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
-		selection_box = {{-1.0, -2.7}, {1, 3.3}},
+		selection_box = {{-1.0, -3}, {1, 3}},
 		connection_distance = 3, joint_distance = 4,
 		weight = 1200,
 		max_speed = 1.204,
@@ -171,18 +145,6 @@ data:extend(
 			shift = {0.42, -1.125}
 			},
 		},
-		minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
 
 		wheels = functions.standard_train_wheels,
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
@@ -195,10 +157,9 @@ data:extend(
 			},
 			match_volume_to_activity = true,
 		},
-		crash_trigger = crash_trigger(),
+		crash_trigger = functions.crash_trigger,
 		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
 		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
-		vehicle_impact_sound =  {filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0},
 	},
 
 	{
@@ -214,7 +175,7 @@ data:extend(
 		corpse = "medium-remnants",
 		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
-		selection_box = {{-1.0, -2.7}, {1, 3.3}},
+		selection_box = {{-1.0, -3}, {1, 3}},
 		connection_distance = 3, joint_distance = 4,
 		weight = 2500,
 		max_speed = 1.204,
@@ -237,18 +198,6 @@ data:extend(
 			shift = {0.42, -1.125}
 			},
 		},
-		minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
 
 		wheels = functions.standard_train_wheels,
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
@@ -261,10 +210,9 @@ data:extend(
 			},
 			match_volume_to_activity = true,
 		},
-		crash_trigger = crash_trigger(),
+		crash_trigger = functions.crash_trigger,
 		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
 		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
-		vehicle_impact_sound =  {filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0},
 	},
 
 	{
@@ -280,7 +228,7 @@ data:extend(
 		corpse = "medium-remnants",
 		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
-		selection_box = {{-1.0, -2.7}, {1, 3.3}},
+		selection_box = {{-1.0, -3}, {1, 3}},
 		connection_distance = 3, joint_distance = 4,
 		weight = 2500,
 		max_speed = 1.204,
@@ -309,18 +257,6 @@ data:extend(
 			shift = {0.42, -1.125}
 		},
 		},
-		minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
 
 		wheels = functions.standard_train_wheels,
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
@@ -333,10 +269,9 @@ data:extend(
 			},
 			match_volume_to_activity = true,
 		},
-		crash_trigger = crash_trigger(),
+		crash_trigger = functions.crash_trigger,
 		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
 		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
-		vehicle_impact_sound =  {filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0},
 	},
 
 	{
@@ -352,7 +287,7 @@ data:extend(
 		corpse = "medium-remnants",
 		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
-		selection_box = {{-1.0, -2.7}, {1, 3.3}},
+		selection_box = {{-1.0, -3}, {1, 3}},
 		connection_distance = 3, joint_distance = 4,
 		weight = 2500,
 		max_speed = 1.204,
@@ -381,18 +316,6 @@ data:extend(
 			shift = {0.42, -1.125}
 		},
 		},
-		minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
 
 		wheels = functions.standard_train_wheels,
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
@@ -405,9 +328,8 @@ data:extend(
 			},
 			match_volume_to_activity = true,
 		},
-		crash_trigger = crash_trigger(),
+		crash_trigger = functions.crash_trigger,
 		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
 		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
-		vehicle_impact_sound =  {filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0},
 	},
 })
