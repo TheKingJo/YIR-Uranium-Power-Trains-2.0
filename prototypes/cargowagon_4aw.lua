@@ -1,4 +1,5 @@
 functions = require("lib.functions")
+local resistances = data.raw["cargo-wagon"]["cargo-wagon"].resistances
 
 data:extend(
 {
@@ -23,11 +24,7 @@ data:extend(
 		friction_force = 0.0015,
 		air_resistance = 0.002,
 		energy_per_hit_point = 5,
-		resistances = {
-			{type = "physical", decrease = 15, percent = 30},
-			{type = "impact",decrease = 50,percent = 60},
-			{type = "acid",decrease = 10,percent = 20}
-		},
+		resistances = resistances,
 		vertical_selection_shift = -0.8,
 		pictures = {
 			rotated = {
@@ -93,11 +90,7 @@ data:extend(
 		friction_force = 0.0015,
 		air_resistance = 0.002,
 		energy_per_hit_point = 5,
-		resistances = {
-			{type = "physical", decrease = 15, percent = 30},
-			{type = "impact",decrease = 50,percent = 60},
-			{type = "acid",decrease = 10,percent = 20}
-		},
+		resistances = resistances,
 		vertical_selection_shift = -0.8,
 		pictures = {
 			rotated = {
@@ -163,11 +156,7 @@ data:extend(
 		friction_force = 0.0015,
 		air_resistance = 0.002,
 		energy_per_hit_point = 5,
-		resistances = {
-			{type = "physical", decrease = 15, percent = 30},
-			{type = "impact",decrease = 50,percent = 60},
-			{type = "acid",decrease = 10,percent = 20}
-		},
+		resistances = resistances,
 		vertical_selection_shift = -0.8,
 		pictures = {
 			rotated = {
@@ -233,11 +222,7 @@ data:extend(
 		friction_force = 0.0015,
 		air_resistance = 0.002,
 		energy_per_hit_point = 5,
-		resistances = {
-			{type = "physical", decrease = 15, percent = 30},
-			{type = "impact",decrease = 50,percent = 60},
-			{type = "acid",decrease = 10,percent = 20}
-		},
+		resistances = resistances,
 		vertical_selection_shift = -0.8,
 		pictures = {
 			rotated = {
@@ -303,11 +288,7 @@ data:extend(
 		friction_force = 0.5,
 		air_resistance = 0.05,
 		energy_per_hit_point = 5,
-		resistances = {
-			{type = "physical", decrease = 15, percent = 30},
-			{type = "impact",decrease = 50,percent = 60},
-			{type = "acid",decrease = 10,percent = 20}
-		},
+		resistances = resistances,
 		vertical_selection_shift = -0.8,
 		pictures = {
 			rotated = {
@@ -379,11 +360,7 @@ data:extend(
 		friction_force = 0.5,
 		air_resistance = 0.05,
 		energy_per_hit_point = 5,
-		resistances = {
-			{type = "physical", decrease = 15, percent = 30},
-			{type = "impact",decrease = 50,percent = 60},
-			{type = "acid",decrease = 10,percent = 20}
-		},
+		resistances = resistances,
 		vertical_selection_shift = -0.8,
 		pictures = {
 			rotated = {

@@ -1,4 +1,5 @@
 functions = require("lib.functions")
+local resistances = data.raw["cargo-wagon"]["cargo-wagon"].resistances
 
 data:extend({
 	{
@@ -23,11 +24,7 @@ data:extend({
 		connection_distance = 3.6,
 		joint_distance = 1.8,
 		energy_per_hit_point = 5,
-		resistances = {
-			{type = "physical", decrease = 15, percent = 30},
-			{type = "impact",decrease = 50,percent = 60},
-			{type = "acid",decrease = 10,percent = 20}
-		},
+		resistances = resistances,
 		vertical_selection_shift = -0.5,
 		pictures = {
 			rotated = {
@@ -94,11 +91,7 @@ data:extend({
 		connection_distance = 3.6,
 		joint_distance = 1.8,
 		energy_per_hit_point = 5,
-		resistances = {
-			{type = "physical", decrease = 15, percent = 30},
-			{type = "impact",decrease = 50,percent = 60},
-			{type = "acid",decrease = 10,percent = 20}			
-		},
+		resistances = resistances,
 		vertical_selection_shift = -0.5,
 		pictures = {
 			rotated = {
@@ -165,11 +158,7 @@ data:extend({
 		connection_distance = 3.6,
 		joint_distance = 1.8,
 		energy_per_hit_point = 5,
-		resistances = {
-			{type = "physical", decrease = 15, percent = 30},
-			{type = "impact",decrease = 50,percent = 60},
-			{type = "acid",decrease = 10,percent = 20}
-		},
+		resistances = resistances,
 		vertical_selection_shift = -0.5,
 		pictures = {
 			rotated = {
@@ -236,11 +225,7 @@ data:extend({
 		connection_distance = 3.6,
 		joint_distance = 1.8,
 		energy_per_hit_point = 5,
-		resistances = {
-			{type = "physical", decrease = 15, percent = 30},
-			{type = "impact",decrease = 50,percent = 60},
-			{type = "acid",decrease = 10,percent = 20}
-		},
+		resistances = resistances,
 		vertical_selection_shift = -0.5,
 		pictures = {
 			rotated = {
