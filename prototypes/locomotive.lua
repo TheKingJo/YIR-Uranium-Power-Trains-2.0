@@ -5,18 +5,18 @@ data:extend({
 		type = "locomotive",
 		name = "yir_atom_header",
 		icon = "__z_yira_UP__/graphics/icons/atom_trieb_icon.png",
-		icon_size = 32,
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		minable = {mining_time = 1, result = "yir_atom_header"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
-		max_health = 800,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
+		mined_sound = {filename = "__core__/sound/deconstruct-metal-large.ogg"},
+		max_health = 2000,
+		corpse = "big-remnants",
+		dying_explosion = "massive-explosion",
 		collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
 		selection_box = {{-1, -3}, {1, 3}},
 		connection_distance = 3,
 		joint_distance = 4,
-		weight = 2000,
+		weight = 3000,
 		max_speed = 1.065,
 		max_power = "2500kW",
 		reversing_power_modifier = 0.6,
@@ -34,20 +34,6 @@ data:extend({
 			fuel_categories = {"nuclear"},
 			effectivity = 5,
 			fuel_inventory_size = 1,
-			smoke = {
-				{
-					name = "train-smoke",
-					deviation = {0.3, 0.3},
-					frequency = 100,
-					position = {0, 0},
-					starting_frame = 0,
-					starting_frame_deviation = 60,
-					height = 2,
-					height_deviation = 0.5,
-					starting_vertical_speed = 0.2,
-					starting_vertical_speed_deviation = 0.1
-				}
-			}
 		},
 		front_light = {
 			{
@@ -79,44 +65,27 @@ data:extend({
 				intensity = 1
 			}
 		},
-		pictures = {
-			rotated = {
-				priority = "very-low",
-				width = 256,
-				height = 256,
-				direction_count = 128,
-				filenames = {
-					"__z_yira_UP__/graphics/atom_head_sheet-0.png",
-					"__z_yira_UP__/graphics/atom_head_sheet-1.png"
-				},
-				line_length = 8,
-				lines_per_file = 8,
-				shift = {0.42, -1.125}
-			},
-		},
 		crash_trigger = functions.crash_trigger,
 		wheels = functions.standard_train_wheels,
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
-		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
-		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
 	},
 	{
 		type = "locomotive",
 		name = "yir_atom_mitte",
 		icon = "__z_yira_UP__/graphics/icons/atom_mitte_icon.png",
-		icon_size = 32,
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		minable = {mining_time = 1, result = "yir_atom_mitte"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
-		max_health = 3000,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
+		mined_sound = {filename = "__core__/sound/deconstruct-metal-large.ogg"},
+		max_health = 2000,
+		corpse = "big-remnants",
+		dying_explosion = "massive-explosion",
 		collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
 		selection_box = {{-1, -3}, {1, 3}},
 		connection_distance = 3,
 		joint_distance = 4,
-		weight = 5000,
+		weight = 3000,
 		max_speed = 1.065,
 		max_power = "5000kW",
 		reversing_power_modifier = 1.0,
@@ -134,20 +103,6 @@ data:extend({
 			fuel_categories = {"nuclear"},
 			effectivity = 5,
 			fuel_inventory_size = 2,
-			smoke = {
-				{
-					name = "train-smoke",
-					deviation = {0.3, 0.3},
-					frequency = 100,
-					position = {0, 0},
-					starting_frame = 0,
-					starting_frame_deviation = 60,
-					height = 2,
-					height_deviation = 0.5,
-					starting_vertical_speed = 0.2,
-					starting_vertical_speed_deviation = 0.1
-				}
-			}
 		},
 		front_light = {
 			{
@@ -179,26 +134,9 @@ data:extend({
 				intensity = 0.8
 			}
 		},
-		pictures = {
-			rotated = {
-				priority = "very-low",
-				width = 256,
-				height = 256,
-				direction_count = 128,
-				filenames = {
-					"__z_yira_UP__/graphics/atom_mitte_sheet-0.png",
-					"__z_yira_UP__/graphics/atom_mitte_sheet-1.png"
-				},
-				line_length = 8,
-				lines_per_file = 8,
-				shift = {0.42, -1.125}
-			},
-		},
 		crash_trigger = functions.crash_trigger,
 		wheels = functions.standard_train_wheels,
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
-		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
-		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
 	}
 })

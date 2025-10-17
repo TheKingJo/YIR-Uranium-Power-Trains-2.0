@@ -1,12 +1,22 @@
-local modname = "__yi_railway__"
+local modname = "__z_yira_UP__"
 local item_sounds = require("__base__.prototypes.item_sounds")
 
 local entityData = {
 	locomotive = {
-		--y_loco_emd1500blue = 	{filename = "emd_1500blue_sheet_old", 	double = true, 	doublesided = false, size = {3296, 5760}, sizeSh = {3424, 6976}, shift = {0.42,-1.125}},
+		yir_atom_header = {filename = "atom_head_sheet",	double = true, doublesided = false, size = {3904, 8032}, sizeSh = {4016, 8192}, shift = {0.42,-1.125}},
+		yir_atom_mitte  = {filename = "atom_mitte_sheet",	double = true, doublesided = false, size = {4096, 8096}, sizeSh = {4096, 8192}, shift = {0.42,-1.125}},
 	},
 	["cargo-wagon"] = {
-		--yir_wagon2a_closed = 	{filename = "wcs_closed_sheet", 		double = false, doublesided = true,	size = {3216, 2736}, sizeSh = {3296, 3056}, shift = {0.42,-1.125}},
+		yir_cw_flourit = 	{filename = "cws_flourit_sheet", 	double = false, doublesided = true,	size = {3360, 2848}, sizeSh = {3376, 3168}, shift = {0.42,-1.125}},
+		yir_cw_uranite =	{filename = "cws_uranite_sheet", 	double = false, doublesided = true,	size = {3360, 2848}, sizeSh = {3376, 3168}, shift = {0.42,-1.125}},
+		yir_cw_upempty = 	{filename = "cws_empty_sheet", 		double = false, doublesided = true,	size = {3360, 2880}, sizeSh = {3376, 3168}, shift = {0.42,-1.125}},
+		yir_cw_upclosed = 	{filename = "cws_closed_sheet", 	double = false, doublesided = true,	size = {3360, 2880}, sizeSh = {3376, 3168}, shift = {0.42,-1.125}},
+		yir_cw_flourit_4a = {filename = "4aw_upflour_sheet", 	double = false, doublesided = true,	size = {4096, 4096}, sizeSh = {4096, 4096}, shift = {0.42,-1.125}},
+		yir_cw_uran_4a = 	{filename = "4aw_upuran_sheet", 	double = false, doublesided = true, size = {4096, 4096}, sizeSh = {4096, 4096}, shift = {0.42,-1.125}},
+		yir_cw_empty_4a = 	{filename = "4aw_upempty_sheet", 	double = false, doublesided = true,	size = {4096, 4096}, sizeSh = {4096, 4096}, shift = {0.42,-1.125}},
+		yir_cw_trans_4a = 	{filename = "4aw_uptrans_sheet", 	double = false, doublesided = true,	size = {4096, 4096}, sizeSh = {4096, 4096}, shift = {0.42,-1.125}},
+		yir_cw_4a_urana =	{filename = "4aw_cw_urana_sheet", 	double = false, doublesided = true,	size = {4080, 3984}, sizeSh = {4080, 4096}, shift = {0.42,-1.125}},
+		yir_cw_4a_cellsu =	{filename = "4aw_cw_ucells_sheet",	double = false, doublesided = true,	size = {4080, 3984}, sizeSh = {4080, 4096}, shift = {0.42,-1.125}},
 	},
 }
 
@@ -29,26 +39,6 @@ local itemData = {
 	},
 }
 
-local categories = {
-	future = {
-		"yir_atom_header",
-		"yir_atom_mitte",
-	},
-	wagonBig = {
-		"yir_cw_flourit",
-		"yir_cw_uranite",
-		"yir_cw_upempty",
-		"yir_cw_upclosed",
-	},
-	wagonSmall = {
-		"yir_cw_flourit_4a",
-		"yir_cw_uran_4a",
-		"yir_cw_empty_4a",
-		"yir_cw_trans_4a",
-		"yir_cw_4a_urana",
-		"yir_cw_4a_cellsu",
-	},
-}
 
 local function filenameGen(name, count, shadow)
 	local names = {}
@@ -57,10 +47,10 @@ local function filenameGen(name, count, shadow)
 		sh = "_shadow"
 	end
 	if count == 1 then
-			table.insert(names, modname.."/graphics/entity/railway/"..name..sh..".png")
+			table.insert(names, modname.."/graphics/"..name..sh..".png")
 	else
 		for i = 0, count - 1, 1 do
-			table.insert(names, modname.."/graphics/entity/railway/"..name..(i+1)..sh..".png")
+			table.insert(names, modname.."/graphics/"..name..(i+1)..sh..".png")
 		end
 	end
 	return names
@@ -134,6 +124,8 @@ for type, typeData in pairs(entityData) do
 			vehicle.pictures = makePictures(datas)
 			vehicle.minimap_representation = data.raw[type][type].minimap_representation
 			vehicle.selected_minimap_representation = data.raw[type][type].selected_minimap_representation
+			vehicle.open_sound = data.raw[type][type].open_sound
+			vehicle.close_sound = data.raw[type][type].close_sound
 			if type == "locomotive" then
 				vehicle.max_health = 0.5 * vehicle.weight
 				vehicle.stop_trigger = data.raw[type][type].stop_trigger
@@ -149,127 +141,52 @@ for type, typeData in pairs(entityData) do
 		log(name.." changed")
 	end
 end
-local resistance1 = {
+local resistance = {
 	{
 		type = "fire",
 		decrease = 25,
-		percent = 50
+		percent = 100
 	},
 	{
 		type = "physical",
-		decrease = 10,
-		percent = 25
-	},
-	{
-		type = "impact",
-		decrease = 30,
-		percent = 50
-	},
-	{
-		type = "explosion",
-		decrease = 20,
-		percent = 35
-	},
-	{
-		type = "acid",
-		decrease = 10,
-		percent = 30
-	},
-	{
-		type = "laser",
-		decrease = 20,
-		percent = 45
-	},
-	{
-		type = "electric",
-		decrease = 20,
-		percent = 45
-	}
-}
-local resistance2 = {
-	{
-		type = "fire",
-		decrease = 15,
-		percent = 50
-	},
-	{
-		type = "physical",
-		decrease = 15,
-		percent = 30
-	},
-	{
-		type = "impact",
-		decrease = 50,
-		percent = 50
-	},
-	{
-		type = "explosion",
-		decrease = 15,
-		percent = 30
-	},
-	{
-		type = "acid",
-		decrease = 3,
-		percent = 20
-	},
-	{
-		type = "laser",
-		decrease = 10,
-		percent = 20
-	},
-	{
-		type = "electric",
-		decrease = 5,
-		percent = 20
-	}
-}
-local resistance3 = {
-	{
-		type = "fire",
-		decrease = 25,
-		percent = 50
-	},
-	{
-		type = "physical",
-		decrease = 25,
+		decrease = 40,
 		percent = 35
 	},
 	{
 		type = "impact",
-		decrease = 75,
+		decrease = 100,
 		percent = 65
 	},
 	{
 		type = "explosion",
-		decrease = 25,
-		percent = 40
+		decrease = 50,
+		percent = 60
 	},
 	{
 		type = "acid",
-		decrease = 10,
-		percent = 30
+		decrease = 20,
+		percent = 45
 	},
 	{
 		type = "laser",
-		decrease = 15,
-		percent = 25
+		decrease = 25,
+		percent = 30
 	},
 	{
 		type = "electric",
-		decrease = 10,
-		percent = 20
+		decrease = 25,
+		percent = 25
 	}
 }
-local workingSoundDiesel = data.raw["locomotive"]["locomotive"].working_sound
-local workingSoundSteam = table.deepcopy(data.raw["locomotive"]["locomotive"].working_sound)
-workingSoundSteam.main_sounds[2].sound.filename = "__base__/sound/steam-engine-90bpm.ogg"
-workingSoundSteam.main_sounds[2].sound.volume = 0.5
+local workingSoundAtom = table.deepcopy(data.raw["locomotive"]["locomotive"].working_sound)
+workingSoundAtom.main_sounds[2].sound.filename = modname.."/sound/nuclear_engine_smooth.ogg"
+workingSoundAtom.main_sounds[2].sound.volume = 0.5
 
 local stats1 = {
-	future  = {resistances = resistance3, max_speed = 2.0, max_power = "2000kW",braking_force = 20, friction_force = 0.0025, air_resistance = 0.006, energy_per_hit_point = 4, reversing_power_modifier = 1, working_sound = workingSoundDiesel},
+	future  = {resistances = resistance, max_speed = 1.85185, max_power = "5000kW", braking_force = 30, friction_force = 0.1, air_resistance = 0.01, energy_per_hit_point = 3, reversing_power_modifier = 1, working_sound = workingSoundAtom},
 }
 local stats2 = {
-	future  = {fuel_inventory_size = 1, effectivity = 1},
+	future  = {fuel_inventory_size = 1, effectivity = 0.1},
 }
 
 local function adjustStats(name, stat)
@@ -286,5 +203,5 @@ local function adjustStats(name, stat)
 	end
 end
 
---adjustStats("y_loco_ses_std", "steam1")
---adjustStats("y_loco_ses_red", "steam1")
+adjustStats("yir_atom_header", "future")
+adjustStats("yir_atom_mitte", "future")

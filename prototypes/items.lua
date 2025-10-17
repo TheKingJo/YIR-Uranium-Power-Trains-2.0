@@ -4,10 +4,10 @@ data:extend({
 		name = "yir_atom_header",
 		icon = "__z_yira_UP__/graphics/icons/atom_trieb_icon.png",
 		group = "yuoki_railway",
-		subgroup = "yir_uranium_power_loco",
-		order = "d3",
+		subgroup = "yir_loco_big",
+		order = "c-uran",
 		stack_size = 5,
-		icon_size = 32,
+		icon_size = 64,
 		place_result = "yir_atom_header"
 	},
 	{
@@ -15,10 +15,10 @@ data:extend({
 		name = "yir_atom_mitte",
 		icon = "__z_yira_UP__/graphics/icons/atom_mitte_icon.png",
 		group = "yuoki_railway",
-		subgroup = "yir_uranium_power_loco",
-		order = "d4",
+		subgroup = "yir_loco_big",
+		order = "c-uran",
 		stack_size = 5,
-		icon_size = 32,
+		icon_size = 64,
 		place_result = "yir_atom_mitte"
 	},
 
@@ -31,7 +31,7 @@ data:extend({
 		subgroup = "yir_uranium_power_cargo2a",
 		order = "cw1",
 		stack_size = 5,
-		icon_size = 32,
+		icon_size = 64,
 		place_result = "yir_cw_flourit",
 	},
 	{
@@ -42,7 +42,7 @@ data:extend({
 		subgroup = "yir_uranium_power_cargo2a",
 		order = "cw2",
 		stack_size = 5,
-		icon_size = 32,
+		icon_size = 64,
 		place_result = "yir_cw_uranite",
 	},
 	{
@@ -53,7 +53,7 @@ data:extend({
 		subgroup = "yir_uranium_power_cargo2a",
 		order = "cw3",
 		stack_size = 5,
-		icon_size = 32,
+		icon_size = 64,
 		place_result = "yir_cw_upempty",
 	},
 	{
@@ -64,7 +64,7 @@ data:extend({
 		subgroup = "yir_uranium_power_cargo2a",
 		order = "cw4",
 		stack_size = 5,
-		icon_size = 32,
+		icon_size = 64,
 		place_result = "yir_cw_upclosed",
 	},
 
@@ -77,7 +77,7 @@ data:extend({
 		subgroup = "yir_uranium_power_cargo4a",
 		order = "cw5",
 		stack_size = 5,
-		icon_size = 32,
+		icon_size = 64,
 		place_result = "yir_cw_flourit_4a",
 	},
 
@@ -89,7 +89,7 @@ data:extend({
 		subgroup = "yir_uranium_power_cargo4a",
 		order = "cw6",
 		stack_size = 5,
-		icon_size = 32,
+		icon_size = 64,
 		place_result = "yir_cw_uran_4a",
 	},
 
@@ -101,7 +101,7 @@ data:extend({
 		subgroup = "yir_uranium_power_cargo4a",
 		order = "cw7",
 		stack_size = 5,
-		icon_size = 32,
+		icon_size = 64,
 		place_result = "yir_cw_empty_4a",
 	},
 
@@ -113,7 +113,7 @@ data:extend({
 		subgroup = "yir_uranium_power_cargo4a",
 		order = "cw8",
 		stack_size = 5,
-		icon_size = 32,
+		icon_size = 64,
 		place_result = "yir_cw_trans_4a",
 	},
 
@@ -125,7 +125,7 @@ data:extend({
 		subgroup = "yir_uranium_power_cargo4a",
 		order = "cw9a",
 		stack_size = 5,
-		icon_size = 32,
+		icon_size = 64,
 		place_result = "yir_cw_4a_urana",
 	},
 
@@ -137,7 +137,7 @@ data:extend({
 		subgroup = "yir_uranium_power_cargo4a",
 		order = "cw9b",
 		stack_size = 5,
-		icon_size = 32,
+		icon_size = 64,
 		place_result = "yir_cw_4a_cellsu",
 	},
 })
