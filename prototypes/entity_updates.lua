@@ -1,5 +1,6 @@
 local modname = "__z_yira_UP__"
 local item_sounds = require("__base__.prototypes.item_sounds")
+local balancingTypes = require("__yi_railway__.prototypes.z_balancing_types")
 
 local entityData = {
 	locomotive = {
@@ -141,53 +142,6 @@ for type, typeData in pairs(entityData) do
 		log(name.." changed")
 	end
 end
-local resistance = {
-	{
-		type = "fire",
-		decrease = 25,
-		percent = 100
-	},
-	{
-		type = "physical",
-		decrease = 40,
-		percent = 35
-	},
-	{
-		type = "impact",
-		decrease = 100,
-		percent = 65
-	},
-	{
-		type = "explosion",
-		decrease = 50,
-		percent = 60
-	},
-	{
-		type = "acid",
-		decrease = 20,
-		percent = 45
-	},
-	{
-		type = "laser",
-		decrease = 25,
-		percent = 30
-	},
-	{
-		type = "electric",
-		decrease = 25,
-		percent = 25
-	}
-}
-local workingSoundAtom = table.deepcopy(data.raw["locomotive"]["locomotive"].working_sound)
-workingSoundAtom.main_sounds[2].sound.filename = modname.."/sound/nuclear_engine_smooth.ogg"
-workingSoundAtom.main_sounds[2].sound.volume = 0.5
-
-local stats1 = {
-	future  = {resistances = resistance, max_speed = 1.85185, max_power = "5000kW", braking_force = 30, friction_force = 0.1, air_resistance = 0.01, energy_per_hit_point = 3, reversing_power_modifier = 1, working_sound = workingSoundAtom},
-}
-local stats2 = {
-	future  = {fuel_inventory_size = 1, effectivity = 0.1},
-}
 
 local function adjustStats(name, stat)
 	local lok = data.raw["locomotive"][name]
@@ -195,13 +149,13 @@ local function adjustStats(name, stat)
 	if not lok then
 		return
 	end
-	for k, v in pairs(stats1[stat]) do
+	for k, v in pairs(balancingTypes.stats1[stat]) do
 		lok[k] = v
 	end
-	for k, v in pairs(stats2[stat]) do
+	for k, v in pairs(balancingTypes.stats2[stat]) do
 		lok.energy_source[k] = v
 	end
 end
 
-adjustStats("yir_atom_header", "future")
-adjustStats("yir_atom_mitte", "future")
+adjustStats("yir_atom_header", "futureU")
+adjustStats("yir_atom_mitte",  "futureU")
