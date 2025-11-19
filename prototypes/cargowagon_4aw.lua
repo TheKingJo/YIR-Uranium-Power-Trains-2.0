@@ -1,12 +1,11 @@
 functions = require("lib.functions")
 local resistances = data.raw["cargo-wagon"]["cargo-wagon"].resistances
 
-data:extend(
-{
+data:extend({
 	{
 		type = "cargo-wagon",
 		name = "yir_cw_flourit_4a",
-		icon = "__z_yira_UP__/graphics/icons/cws64_fluorite_icon.png",
+		icon = "__z_yira_UP__/graphics/icons/cws64_fluorite_icon_4aw.png",
 		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		inventory_size = 40,
@@ -43,7 +42,7 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "yir_cw_uran_4a",
-		icon = "__z_yira_UP__/graphics/icons/cws64_uranite-icon.png",
+		icon = "__z_yira_UP__/graphics/icons/cws64_uranite-icon_4aw.png",
 		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		inventory_size = 40,
@@ -80,7 +79,7 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "yir_cw_empty_4a",
-		icon = "__z_yira_UP__/graphics/icons/cws64_empty.png",
+		icon = "__z_yira_UP__/graphics/icons/cws64_empty_4aw.png",
 		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		inventory_size = 40,
@@ -117,7 +116,7 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "yir_cw_trans_4a",
-		icon = "__z_yira_UP__/graphics/icons/cws64_up_closed_icon.png",
+		icon = "__z_yira_UP__/graphics/icons/cws64_up_closed_icon_4aw.png",
 		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		inventory_size = 40,
