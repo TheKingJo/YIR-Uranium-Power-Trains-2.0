@@ -1,5 +1,4 @@
 functions = require("lib.functions")
-local resistances = data.raw["cargo-wagon"]["cargo-wagon"].resistances
 
 data:extend({
 	{
@@ -7,35 +6,19 @@ data:extend({
 		name = "yir_cw_flourit_4a",
 		icon = "__z_yira_UP__/graphics/icons/cws64_fluorite_icon_4aw.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		inventory_size = 40,
-		minable = {mining_time = 0.5, result = "yir_cw_flourit_4a"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 400,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
 		selection_box = {{-1.0, -3}, {1, 3}},
-		connection_distance = 3, joint_distance = 4,
+		connection_distance = 3, 
+		joint_distance = 4,
 		weight = 1000,
 		max_speed = 1.5,
 		braking_force = 2,
 		friction_force = 0.0015,
 		air_resistance = 0.002,
 		energy_per_hit_point = 5,
-		resistances = resistances,
 		vertical_selection_shift = -0.8,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
-		tie_distance = 50,
-		working_sound = {
-			sound =
-			{
-				filename = "__base__/sound/train-wheels.ogg",
-				volume = 0.5
-			},
-			match_volume_to_activity = true,
-		},
-		crash_trigger = functions.crash_trigger,
 	},
 
 	{
@@ -43,35 +26,19 @@ data:extend({
 		name = "yir_cw_uran_4a",
 		icon = "__z_yira_UP__/graphics/icons/cws64_uranite-icon_4aw.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		inventory_size = 40,
-		minable = {mining_time = 0.5, result = "yir_cw_uran_4a"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 400,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
 		selection_box = {{-1.0, -3}, {1, 3}},
-		connection_distance = 3, joint_distance = 4,
+		connection_distance = 3, 
+		joint_distance = 4,
 		weight = 1000,
 		max_speed = 1.5,
 		braking_force = 2,
 		friction_force = 0.0015,
 		air_resistance = 0.002,
 		energy_per_hit_point = 5,
-		resistances = resistances,
 		vertical_selection_shift = -0.8,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
-		tie_distance = 50,
-		working_sound = {
-			sound =
-			{
-				filename = "__base__/sound/train-wheels.ogg",
-				volume = 0.5
-			},
-			match_volume_to_activity = true,
-		},
-		crash_trigger = functions.crash_trigger,
 	},
 
 	{
@@ -79,35 +46,19 @@ data:extend({
 		name = "yir_cw_empty_4a",
 		icon = "__z_yira_UP__/graphics/icons/cws64_empty_4aw.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		inventory_size = 40,
-		minable = {mining_time = 0.5, result = "yir_cw_empty_4a"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 400,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
 		selection_box = {{-1.0, -3}, {1, 3}},
-		connection_distance = 3, joint_distance = 4,
+		connection_distance = 3, 
+		joint_distance = 4,
 		weight = 1000,
 		max_speed = 1.5,
 		braking_force = 2,
 		friction_force = 0.0015,
 		air_resistance = 0.002,
 		energy_per_hit_point = 5,
-		resistances = resistances,
 		vertical_selection_shift = -0.8,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
-		tie_distance = 50,
-		working_sound = {
-			sound =
-			{
-				filename = "__base__/sound/train-wheels.ogg",
-				volume = 0.5
-			},
-			match_volume_to_activity = true,
-		},
-		crash_trigger = functions.crash_trigger,
 	},
 
 	{
@@ -115,35 +66,19 @@ data:extend({
 		name = "yir_cw_trans_4a",
 		icon = "__z_yira_UP__/graphics/icons/cws64_up_closed_icon_4aw.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		inventory_size = 40,
-		minable = {mining_time = 0.5, result = "yir_cw_trans_4a"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 400,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
 		selection_box = {{-1.0, -3}, {1, 3}},
-		connection_distance = 3, joint_distance = 4,
+		connection_distance = 3, 
+		joint_distance = 4,
 		weight = 1000,
 		max_speed = 1.5,
 		braking_force = 2,
 		friction_force = 0.0015,
 		air_resistance = 0.002,
 		energy_per_hit_point = 5,
-		resistances = resistances,
 		vertical_selection_shift = -0.8,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
-		tie_distance = 50,
-		working_sound = {
-			sound =
-			{
-				filename = "__base__/sound/train-wheels.ogg",
-				volume = 0.5
-			},
-			match_volume_to_activity = true,
-		},
-		crash_trigger = functions.crash_trigger,
 	},
 
 	{
@@ -151,36 +86,20 @@ data:extend({
 		name = "yir_cw_4a_urana",
 		icon = "__z_yira_UP__/graphics/icons/4aw_cw_urana_icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		inventory_size = 40,
-		minable = {mining_time = 0.5, result = "yir_cw_4a_urana"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 400,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
 		selection_box = {{-1.0, -3}, {1, 3}},
-		connection_distance = 3, joint_distance = 4,
+		connection_distance = 3, 
+		joint_distance = 4,
 		weight = 1000,
 		max_speed = 1.5,
 		braking_force = 2,
 		friction_force = 0.5,
 		air_resistance = 0.05,
 		energy_per_hit_point = 5,
-		resistances = resistances,
 		vertical_selection_shift = -0.8,
 		wheels = functions.standard_train_wheels,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
-		tie_distance = 50,
-		working_sound = {
-			sound =
-			{
-				filename = "__base__/sound/train-wheels.ogg",
-				volume = 0.5
-			},
-			match_volume_to_activity = true,
-		},
-		crash_trigger = functions.crash_trigger,
 	},
 
 	{
@@ -188,35 +107,19 @@ data:extend({
 		name = "yir_cw_4a_cellsu",
 		icon = "__z_yira_UP__/graphics/icons/4aw_cw_ucells_icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		inventory_size = 40,
-		minable = {mining_time = 0.5, result = "yir_cw_4a_cellsu"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 400,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
 		selection_box = {{-1.0, -3}, {1, 3}},
-		connection_distance = 3, joint_distance = 4,
+		connection_distance = 3, 
+		joint_distance = 4,
 		weight = 1000,
 		max_speed = 1.5,
 		braking_force = 2,
 		friction_force = 0.5,
 		air_resistance = 0.05,
 		energy_per_hit_point = 5,
-		resistances = resistances,
 		vertical_selection_shift = -0.8,
 		wheels = functions.standard_train_wheels,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
-		tie_distance = 50,
-		working_sound = {
-			sound =
-			{
-				filename = "__base__/sound/train-wheels.ogg",
-				volume = 0.5
-			},
-			match_volume_to_activity = true,
-		},
-		crash_trigger = functions.crash_trigger,
 	},
 })

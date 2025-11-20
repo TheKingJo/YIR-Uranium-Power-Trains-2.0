@@ -7,13 +7,8 @@ data:extend({
 		name = "yir_cw_flourit",
 		icon = "__z_yira_UP__/graphics/icons/cws64_fluorite_icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		inventory_size = 20,
-		minable = {mining_time = 0.5, result = "yir_cw_flourit"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 400,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -1.5}, {0.6, 1.5}},
 		selection_box = {{-1, -2}, {1, 2}},
 		weight = 500,
@@ -27,8 +22,6 @@ data:extend({
 		resistances = resistances,
 		vertical_selection_shift = -0.5,
 		wheels = functions.standard_train_wheels,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
-		tie_distance = 50,
 		working_sound = {
 			sound =
 			{
@@ -37,7 +30,6 @@ data:extend({
 			},
 			match_volume_to_activity = true,
 		},
-		crash_trigger = functions.crash_trigger,
 	},
 
 	{
@@ -45,13 +37,8 @@ data:extend({
 		name = "yir_cw_uranite",
 		icon = "__z_yira_UP__/graphics/icons/cws64_uranite-icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		inventory_size = 20,
-		minable = {mining_time = 0.5, result = "yir_cw_uranite"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 400,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -1.5}, {0.6, 1.5}},
 		selection_box = {{-1, -2}, {1, 2}},
 		weight = 500,
@@ -65,8 +52,6 @@ data:extend({
 		resistances = resistances,
 		vertical_selection_shift = -0.5,
 		wheels = functions.standard_train_wheels,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
-		tie_distance = 50,
 		working_sound = {
 			sound =
 			{
@@ -75,7 +60,6 @@ data:extend({
 			},
 			match_volume_to_activity = true,
 		},
-		crash_trigger = functions.crash_trigger,
 	},
 
 	{
@@ -83,13 +67,8 @@ data:extend({
 		name = "yir_cw_upempty",
 		icon = "__z_yira_UP__/graphics/icons/cws64_empty.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		inventory_size = 20,
-		minable = {mining_time = 0.5, result = "yir_cw_upempty"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 400,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -1.5}, {0.6, 1.5}},
 		selection_box = {{-1, -2}, {1, 2}},
 		weight = 500,
@@ -103,8 +82,6 @@ data:extend({
 		resistances = resistances,
 		vertical_selection_shift = -0.5,
 		wheels = functions.standard_train_wheels,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
-		tie_distance = 50,
 		working_sound = {
 			sound =
 			{
@@ -113,7 +90,6 @@ data:extend({
 			},
 			match_volume_to_activity = true,
 		},
-		crash_trigger = functions.crash_trigger,
 	},
 
 	{
@@ -121,13 +97,8 @@ data:extend({
 		name = "yir_cw_upclosed",
 		icon = "__z_yira_UP__/graphics/icons/cws64_up_closed_icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		inventory_size = 20,
-		minable = {mining_time = 0.5, result = "yir_cw_upclosed"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 400,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -1.5}, {0.6, 1.5}},
 		selection_box = {{-1, -2}, {1, 2}},
 		weight = 500,
@@ -141,8 +112,6 @@ data:extend({
 		resistances = resistances,
 		vertical_selection_shift = -0.5,
 		wheels = functions.standard_train_wheels,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
-		tie_distance = 50,
 		working_sound = {
 			sound =
 			{
@@ -151,6 +120,5 @@ data:extend({
 			},
 			match_volume_to_activity = true,
 		},
-		crash_trigger = functions.crash_trigger,
 	},
 })

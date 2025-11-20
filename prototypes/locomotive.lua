@@ -6,8 +6,6 @@ data:extend({
 		name = "yir_atom_header",
 		icon = "__z_yira_UP__/graphics/icons/atom_trieb_icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 0.5, result = "yir_atom_header"},
 		mined_sound = {filename = "__core__/sound/deconstruct-metal-large.ogg"},
 		max_health = 2000,
 		corpse = "big-remnants",
@@ -65,17 +63,12 @@ data:extend({
 				intensity = 1
 			}
 		},
-		crash_trigger = functions.crash_trigger,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
-		tie_distance = 50,
 	},
 	{
 		type = "locomotive",
 		name = "yir_atom_mitte",
 		icon = "__z_yira_UP__/graphics/icons/atom_mitte_icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 0.5, result = "yir_atom_mitte"},
 		mined_sound = {filename = "__core__/sound/deconstruct-metal-large.ogg"},
 		max_health = 2000,
 		corpse = "big-remnants",
@@ -133,8 +126,5 @@ data:extend({
 				intensity = 0.8
 			}
 		},
-		crash_trigger = functions.crash_trigger,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
-		tie_distance = 50,
 	}
 })
